@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+  <html> 
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Weather App</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      <link href="./assets/css/style.css" rel="stylesheet">
+      <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+      <div class="main_continer">
+        <div class="header_text_container">
+          <div class="header_text">
+            Weather Dashboard
+          </div>
+        </div>
+        <div class="body_content">
+          <div class="left_part">
+            <h4>Search for a city</h4>
+            <div class="search_part">
+              <div class="input-group">
+                <input type="text" class="form-control" id="input-box" placeholder="City name">
+                  <button class="btn btn-primary" id="search-button" type="button">
+                    <i class="fa fa-search"></i>
+                  </button>
+              </div>
+              <div class="error"  id="error" ></div>
+
+            </div>
+
+            <ul class="list-group" id="search-list">             
+            </ul>
+          </div> 
+          <div class= "body" class="right_part">
+              <div class="info_part">
+                <div class="city_info"><p class="info" id="city"></p><p class="info" id="date-0"></p><img class="info" id="icon-0"></p></div>
+                <div class="data-info"><p id="temp-0"></p></div>
+                <div class="data-info"><p id="humidity-0"></p></div>
+                <div class="data-info"><p id="windspeed-0"></p></div>
+                <div class="data-info"><p class="info">UV Index : </p><button class= "btn" id="index-0"></button></div> 
+              </div>
+              <div class="lower_part">
+                <h4>5-Day ForeCast:</h4>
+
+                <div class="card_cointainer">
+                  <div class="card_content">
+                    <h4 class="data" id="date-1"></h4>
+                    <img class="data" id="icon-1"></img>
+                    <p class="data" id="temp-1"></p>
+                    <p class="data" id="humidity-1"></p>
+                  </div>
+                  <div class="card_content">
+                    <h4 class="data" id="date-2"></h4>
+                    <img class="data" id="icon-2"></img>
+                    <p class="data" id="temp-2"></p>
+                    <p class="data" id="humidity-2"></p>
+                  </div>
+                  <div class="card_content">
+                    <h4 class="data" id="date-3"></h4>
+                    <img class="data" id="icon-3"></img>
+                    <p class="data" id="temp-3"></p>
+                    <p class="data" id="humidity-3"></p>
+                  </div>
+                  <div class="card_content">
+                    <h4 class="data" id="date-4"></h4>
+                    <img class="data" id="icon-4"></img>
+                    <p class="data" id="temp-4"></p>
+                    <p class="data" id="humidity-4"></p>
+                  </div>
+                  <div class="card_content">
+                    <h4 class="data" id="date-5"></h4>
+                    <img class="data" id="icon-5"></img>
+                    <p class="data" id="temp-5"></p>
+                    <p class="data" id="humidity-5"></p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    <script src="./assets/js/app.js"></script>
+  </html>
+
+              
