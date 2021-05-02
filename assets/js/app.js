@@ -3,7 +3,7 @@ const WEATHER_API = {
     ForecastUrl: "https://api.openweathermap.org/data/2.5/onecall",
     indexBaseUrl : "https://api.openweathermap.org/data/2.5/uvi/forecast",
     iconBaseUrl : "https://openweathermap.org/img/w/",
-    geoCodingUrl : "http://api.openweathermap.org/geo/1.0/direct"
+    geoCodingUrl : "https://api.openweathermap.org/geo/1.0/direct"
 }
 
 
