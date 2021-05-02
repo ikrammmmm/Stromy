@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header_text_container{
+  background-color: #1f2022;
+  color: #cec3b7;
+  font-size: 2em;
+  font-weight: bold;
+  height: 80px;
+  position: relative;
+}
+
+.header_text{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.body_content{
+  display: flex;
+}
+
+/* search section */
+.left_part{
+  flex: 1;
+  background-color: #e7e9eb;
+  padding: 2em;
+  text-align: left;
+  min-height: 90vh;
+}
+
+.search_part{
+  margin: 20px 0;
+}
+
+
+/* result section */
+.right_part{
+  flex: 4;
+  background-color: white;
+}
+
+/* weather infos */
+.info_part{
+  margin: 2em;
+  padding: 20px 50px;
+  text-align: left;
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: 1px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(197, 193, 193);
+}
+
+.city_info{
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.data_info{
+  font-size: 18px;
+  padding: 1px 0;
+}
+
+/* card part */
+.lower_part{
+  padding: 10px 2em;
+}
+
+.card_cointainer{
+  margin-top: 20px;
+  display: flex;
+  justify-content: start;
+}
+
+.card_content{
+  background-color: #015fb6;
+  color: white;
+  width: 170px;
+  margin-right: 2.5em;
+  padding: 10px 12px;
+  border-radius: 4px;
+}
+
+
+li {
+  cursor: pointer;
+}
+
+.error {
+  text-align: center;
+  font-size: small;
+  padding-top: 10px;
+  color: rgb(133, 5, 5);
+}
+
+.info {
+  display: inline;
+}
+
+.body{
+  visibility: hidden;
+}
+
+span {
+  float: right;
+  font-size: 25px;
+}
