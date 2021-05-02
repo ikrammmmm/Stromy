@@ -1,4 +1,4 @@
-const weatherApi = {
+const WEATHER_API = {
     key: "3c13c568e5fa599606390814852213b4",
     ForecastUrl: "https://api.openweathermap.org/data/2.5/onecall",
     indexBaseUrl : "https://api.openweathermap.org/data/2.5/uvi/forecast",
@@ -105,7 +105,7 @@ searchInputBox.addEventListener('keypress', async (event)=> {
 
 async function getGeo(city) {
     try{
-        const response = await fetch(`${weatherApi.geoCodingUrl}?q=${city}&appid=${weatherApi.key}`);
+        const response = await fetch(`${WEATHER_API.geoCodingUrl}?q=${city}&appid=${WEATHER_API.key}`);
 
         if(response.ok) {
             const geo = await response.json();
@@ -124,7 +124,7 @@ async function getGeo(city) {
 async function getWeather(lat, lon) {
     
     try {
-        const response = await fetch(`${weatherApi.ForecastUrl}?lat=${lat}&lon=${lon}&exclude=hourly,minutely&units=imperial&appid=${weatherApi.key}`); 
+        const response = await fetch(`${WEATHER_API.ForecastUrl}?lat=${lat}&lon=${lon}&exclude=hourly,minutely&units=imperial&appid=${WEATHER_API.key}`); 
 
         if(response.ok) {          
             const forecast = await response.json();
@@ -174,7 +174,7 @@ function displayWeather(city,data) {
         todayDate.setDate(todayDate.getDate()+i);
         date.innerText = dateManage(todayDate,i);
 
-        let iconUrl = weatherApi.iconBaseUrl+data.daily[i].weather[0].icon+".png";
+        let iconUrl = WEATHER_API.iconBaseUrl+data.daily[i].weather[0].icon+".png";
         document.getElementById("icon-"+i).src =iconUrl;
     }
 }
